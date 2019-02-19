@@ -1,0 +1,1 @@
+recvPruMsg.o: ../recvPruMsg.cpp
