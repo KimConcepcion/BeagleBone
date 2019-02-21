@@ -30,6 +30,7 @@ void main(void)
         }
 
         //  Delay for 1ms before it generates the next tick:
+        //  The pru is running 200MHz, which means that the period is 5ns - 1/200^6 = 5^-9
         //  Each cycle is 5ns - 1000000 cycles * 5ns = 5000000ns or 5ms
         //  5ns*200000=1000000ns or 1ms
         __delay_cycles(200000);
