@@ -14,3 +14,6 @@ https://github.com/beagleboard/am335x_pru_package
 https://github.com/MarkAYoder/PRUCookbook/blob/master/docs/book.pdf
 2. Very informant and understandable article about how to run C programs on the prus:
 http://www.righto.com/2016/09/how-to-run-c-programs-on-beaglebones.html
+
+## Quotes
+Software and cathedrals are much the same – first we build them, then we pray.
