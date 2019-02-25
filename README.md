@@ -1,4 +1,5 @@
 # BeagleBone
+This repository includes some collected work with the Beaglebone Black board. Some of the code is still w.i.p.
 
 ## Tools
 * Code Composer Studio is a nice IDE from Texas Instruments, which also happens to feature a compiler for the pru's on Beaglebone:
