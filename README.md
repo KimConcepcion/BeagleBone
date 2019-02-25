@@ -9,7 +9,7 @@ http://processors.wiki.ti.com/index.php/Download_CCS
 https://github.com/beagleboard/am335x_pru_package
 
 ## References
-### Very good book about how to use the PRU's on Beaglebone by Mark A. Yoder:
+1. Very good book about how to use the PRU's on Beaglebone by Mark A. Yoder:
 https://github.com/MarkAYoder/PRUCookbook/blob/master/docs/book.pdf
-### Very informant and understandable article about how to run C programs on the prus:
+2. Very informant and understandable article about how to run C programs on the prus:
 http://www.righto.com/2016/09/how-to-run-c-programs-on-beaglebones.html
