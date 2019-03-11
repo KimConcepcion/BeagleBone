@@ -1,0 +1,22 @@
+#! /bin/bash
+
+# Script for stoping pru0 or pru1 on Beaglebone Black board
+# Author: Kim C. Nielsen
+
+if [ $1 == 'pru0' ]
+then
+        # Start pru0 and check state:
+        cd /sys/devices/platform/ocp/4a326004.pruss-soc-bus/4a300000.pruss/4a334000.pru/remoteproc/remoteproc1
+        echo stop > state
+        echo "PRU0 is $(cat state)"
+
+elif  [ $1 == 'pru1' ]
+then
+        # Start pru1 and check state:
+        cd /sys/devices/platform/ocp/4a326004.pruss-soc-bus/4a300000.pruss/4a338000.pru/remoteproc/remoteproc2
+        echo stop > state
+        echo "PRU1 is $(cat state)"
+
+else
+        echo "Please select either pru0 or pru1"
+fi
