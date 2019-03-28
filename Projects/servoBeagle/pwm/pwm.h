@@ -10,6 +10,12 @@
 #define EXPORT "/sys/class/pwm/pwmchip1/export"
 #define UNEXPORT "/sys/class/pwm/pwmchip1/unexport"
 
+#define SERVO_PERIOD           10000000
+#define SERVO_DUTY_CYCLE_START 1000000
+#define SERVO_DUTY_CYCLE_STOP  2400000
+#define STEP                   10000
+#define DELAY                  7000
+
 /****************************************************
  / P R O T O T Y P E S
  *****************************************************/
@@ -42,5 +48,21 @@ void setPeriod(int period);
  * @param duty cycle of pwm signal
  */
 void setDutyCycle(int duty_cycle);
+
+/**
+ * @name servoCounterClockWise
+ * @param tick
+ * @param period
+ * @param step
+ */
+void servoCounterClockWise();
+
+/**
+ * @name servoCounterClockWise
+ * @param tick
+ * @param period
+ * @param step
+ */
+void servoClockWise();
 
 #endif

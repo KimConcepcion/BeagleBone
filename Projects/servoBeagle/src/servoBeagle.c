@@ -1,6 +1,6 @@
-
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "pwm.h"
 
 /**
@@ -8,15 +8,11 @@
  */
 int main(int argc, char **argv)
 {
-    if(argc != 3) {
-        fprintf(stderr, "Specify period and duty cycle\n");
-        return -1;
-    }
-
     initServo();
-    setPeriod( atoi(argv[1]) );
-    setDutyCycle( atoi(argv[2] ));
-    //disableServo();
 
+    servoCounterClockWise();
+    servoClockWise();
+
+    disableServo();
     return 0;
 }

@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 /*****************************************************
  / F U N C T I O N S
@@ -31,6 +32,8 @@ void initServo()
     writeFile(ENABLE, 1);
 
     fprintf(stdout, "Servo succesfully enabled\n");
+
+    setPeriod(SERVO_PERIOD);
 }
 
 void disableServo()
@@ -53,3 +56,32 @@ void setDutyCycle(int duty_cycle)
 {
     writeFile(DUTY_CYCLE, duty_cycle);
 }
+
+void servoCounterClockWise()
+{
+    int tick = 0;
+
+    usleep(DELAY+3000);
+    printf("##### Servo is moving counter clockwise #####\n");
+    for(tick = SERVO_DUTY_CYCLE_START; tick != SERVO_DUTY_CYCLE_STOP; tick += STEP)
+    {
+        //  Place a sleep here. This will make the servo move more smoothly)
+        usleep(DELAY);
+        setDutyCycle(tick);
+    }
+}
+
+void servoClockWise()
+{
+    int tick = 0;
+
+    usleep(DELAY+3000);
+    printf("##### Servo is moving clockwise #####\n");
+    for(tick = SERVO_DUTY_CYCLE_STOP; tick != SERVO_DUTY_CYCLE_START; tick -= STEP)
+        {
+            //  Place a sleep here. This will make the servo move more smoothly)
+            usleep(DELAY);
+            setDutyCycle(tick);
+        }
+}
+
