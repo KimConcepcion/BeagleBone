@@ -10,8 +10,15 @@ int main(int argc, char **argv)
 {
     initServo();
 
-    servoCounterClockWise();
-    servoClockWise();
+    //servoCounterClockWise();
+    //servoClockWise();
+
+    for(;;)
+    {
+        servoClockWise();
+        usleep(8000);
+        servoCounterClockWise();
+    }
 
     disableServo();
     return 0;

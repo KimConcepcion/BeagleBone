@@ -12,7 +12,7 @@
 
 #define SERVO_PERIOD           10000000
 #define SERVO_DUTY_CYCLE_START 1000000
-#define SERVO_DUTY_CYCLE_STOP  2400000
+#define SERVO_DUTY_CYCLE_STOP  2600000
 #define STEP                   10000
 #define DELAY                  7000
 
