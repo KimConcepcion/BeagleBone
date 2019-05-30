@@ -12,6 +12,11 @@ https://github.com/beagleboard/am335x_pru_package
 * PSFTP - Client for file transfer sessions between Beaglebone and pc:
 https://the.earth.li/~sgtatham/putty/latest/w64/psftp.exe
 
+* MacOS
+Setting up a cross compiler on Windows or Linux is trivial. However, on MacOS it seems a bit more tricky. You can use "ct-ng" tool to setup a compatible compiler for ARM.
+You will also need to create a file system, which is case sensitive. You can use the disk utility tool for this. Make sure to allocate enough space (After ct-nt was done it used 7.5 GB)
+The MacOS folder contains my configuration settings of ct-ng.
+
 ## References
 * Very good book about how to use the PRU's on Beaglebone by Mark A. Yoder:
 https://github.com/MarkAYoder/PRUCookbook/blob/master/docs/book.pdf
