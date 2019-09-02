@@ -1,5 +1,6 @@
 <html lang="en">
 
+<!-- Head section: -->
 <head>
   <meta charset="utf-8">
   <link rel='icon' href='ressources/beagle.ico' type="image/x-icon"/>
@@ -8,24 +9,49 @@
   <title>BeagleBone House Surveillance</title>
 </head>
 
+<!-- Body section: -->
 <body>
 
   <!-- Headline + Network details: -->
   <h1>BeagleBone House Surveillance</h1>
 
   <!-- CPU Stuff: -->
-  <h2>CPU Activity</h2>
-  <canvas id="cpu_chart" width="500" height="500"></canvas>
+  <div style="margin-left: 5px;">
+    <h2>CPU Metrics</h2>
+    <canvas id="cpu_chart" width="500" height="500"></canvas>
+    <p>Speed: </p>
+    <p>Processes: </p>
+    <p>Threads: </p>
+    <h2>Indoor Metrics</h2>
+  </div>
+
+  <!-- JS code for CPU chart: -->
   <script src="js/cpu.js"></script>
 
-  <p>Speed</p>
-  <p>Processes</p>
-  <p>Threads</p>
-
   <!-- Indoor sensor data: -->
-  <h2>Indoor Metrics</h2>
-  <p>Humidity</p>
-  <p>Temperature</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div style="margin-left: -245px;">
+        <h3>Temperature</h3>
+        <canvas id="temp_chart" width="500" height="500"></canvas>
+        <p>Device: LM35DZ</p>
+        <p>Temperature: </p>
+      </div>
+      </div>
+      <div class="col-xs-6">
+        <div style="margin-left: 150px;">
+        <h3>Humidity</h3>
+        <canvas id="hum_chart" width="500" height="500"></canvas>
+        <p>Device: Arduino Humidity sensor</p>
+        <p>Humidity: </p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS code for Temp + Hum chart: -->
+  <script src="js/indoor.js"></script>
 
 </body>
 </html>

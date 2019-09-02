@@ -8,7 +8,7 @@ let cpu_chart = new Chart(ctx, {
       {
         label: "CPU Performance",
         data: [86,114,106,106,107,111,133,221,783,2478],
-        borderColor: "#3e95cd",
+        borderColor: "#3cba9f",
         fill: false
       }
     ]
@@ -16,9 +16,13 @@ let cpu_chart = new Chart(ctx, {
   options: {
     responsive: false,
     maintainAspectRatio: false,
-    title: {
-      display: true,
-      text: 'CPU Metrics'
+    scales: {
+      xAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: "Time [s]"
+        }
+      }]
     }
   }
 })
