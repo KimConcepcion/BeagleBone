@@ -4,7 +4,7 @@ from http.server import BaseHTTPRequestHandler
 from routes.main import routes
 from pathlib import Path
 from response.templateHandler import TemplateHandler
-from reponse.badRequestHandler import BadRequestHandler
+from response.badRequestHandler import BadRequestHandler
 
 class Server(BaseHTTPRequestHandler):
 
