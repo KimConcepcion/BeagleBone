@@ -40,5 +40,5 @@ class Server(BaseHTTPRequestHandler):
         return bytes(response_content, 'UTF-8')
 
     def respond(self):
-        content = self.http_handle(200, 'text/html')
+        content = self.http_handle()
         self.wfile.write(content)
