@@ -42,7 +42,7 @@ class Server(BaseHTTPRequestHandler):
             content = "404 Not Found"
 
         self.end_headers()
-        return bytes(response_content, 'UTF-8')
+        return bytes(content, 'UTF-8')
 
     def respond(self, opts):
         reponse = self.http_handle(opts['handler'])
