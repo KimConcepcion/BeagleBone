@@ -17,6 +17,9 @@ class RequestHandler():
     def setStatus(self, status):
         self.status = status
 
+    def getStatus(self):
+        return self.status
+
     def getContentType(self):
         return self.contentType
 
