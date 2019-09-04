@@ -39,7 +39,7 @@ class Server(BaseHTTPRequestHandler):
             content = handler.getContents()
             self.send_header('Content_type', handler.getContentType)
         else:
-            content = bad_request()
+            content = handler.bad_request()
             #content = "404 Not Found"
 
         self.end_headers()
