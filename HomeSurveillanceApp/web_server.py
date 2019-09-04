@@ -4,7 +4,7 @@ from server import Server
 import time
 import psutil
 
-HOST_NAME = 'localhost'
+HOST_NAME = '192.168.1.34'
 PORT = 5000
 
 if __name__ == '__main__':
