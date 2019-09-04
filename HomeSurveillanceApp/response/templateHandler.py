@@ -1,4 +1,4 @@
-from reponse.requestHandler import RequestHandler
+from response.requestHandler import RequestHandler
 
 class TemplateHandler(RequestHandler):
 
