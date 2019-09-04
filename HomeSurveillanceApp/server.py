@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler
+from routes.main import routes
 
 class Server(BaseHTTPRequestHandler):
 
@@ -16,7 +17,8 @@ class Server(BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header('Content_type', content_type)
         self.end_headers()
-        return bytes('Hello motherfucker', 'UTF-8')
+        route_content = routes[self.path]
+        return bytes(route_content, 'UTF-8')
 
     def respond(self):
         content = self.http_handle(200, 'text/html')
