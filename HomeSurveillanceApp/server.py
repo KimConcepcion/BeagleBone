@@ -30,6 +30,9 @@ class Server(BaseHTTPRequestHandler):
             else:
                 content_type = "text/plain"
                 response_content = "404 Not Found"
+        else:
+            content_type = "text/plain"
+            response_content = "404 Not Found"
 
         self.send_response(status)
         self.send_header('Content_type', content_type)
