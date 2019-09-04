@@ -46,4 +46,4 @@ class Server(BaseHTTPRequestHandler):
 
     def respond(self, opts):
         reponse = self.http_handle(opts['handler'])
-        self.wfile.write(content)
+        self.wfile.write(reponse)
