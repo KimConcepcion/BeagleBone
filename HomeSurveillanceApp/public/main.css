@@ -1,1 +1,28 @@
-body{ background-color: #222 }
+body {
+  background-color: #3A506B;
+}
+
+h1 {
+  color : #CDFFE0;
+  text-align: left;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h2 {
+  color : #CDFFE0;
+  text-align: left;
+  font-weight: bold;
+}
+
+h3 {
+  color : #CDFFE0;
+  text-align: left;
+  font-weight: bold;
+}
+
+p {
+  color : #CDFFE0;
+  text-align: left;
+  font-weight: bold;
+}
