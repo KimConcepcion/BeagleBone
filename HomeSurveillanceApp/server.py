@@ -38,7 +38,8 @@ class Server(BaseHTTPRequestHandler):
             'handler' : handler
         })
 
-    def http_handle(self, status_code, handler):
+    def http_handle(self, handler):
+        status_code = handler.getStatus()
         self.send_response(status_code)
 
         if status_code is 200:
