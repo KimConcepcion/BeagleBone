@@ -1,4 +1,5 @@
 var ctx = document.getElementById('cpu_chart');
+ctx.style.backgroundColor = '#FFFFFF';
 
 let cpu_chart = new Chart(ctx, {
   type: 'line',

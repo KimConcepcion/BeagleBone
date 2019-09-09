@@ -1,5 +1,7 @@
 var ctx_temp = document.getElementById('temp_chart');
 var ctx_hum = document.getElementById('hum_chart');
+ctx_temp.style.backgroundColor = '#FFFFFF';
+ctx_hum.style.backgroundColor = '#FFFFFF';
 
 //  Temperature code:
 let temp_chart = new Chart(ctx_temp, {

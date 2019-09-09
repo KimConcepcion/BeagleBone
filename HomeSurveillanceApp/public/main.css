@@ -1,28 +1,28 @@
 body {
-  background-color: #3A506B;
+  background-color: #525b5d;
 }
 
 h1 {
-  color : #CDFFE0;
+  color : #FFF10D;
   text-align: left;
   text-decoration: underline;
   font-weight: bold;
 }
 
 h2 {
-  color : #CDFFE0;
+  color : #FFF10D;
   text-align: left;
   font-weight: bold;
 }
 
 h3 {
-  color : #CDFFE0;
+  color : #FFF10D;
   text-align: left;
   font-weight: bold;
 }
 
 p {
-  color : #CDFFE0;
+  color : #FFF10D;
   text-align: left;
   font-weight: bold;
 }
